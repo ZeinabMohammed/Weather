@@ -11,16 +11,15 @@
 {% endif%}
 </head>
 <body>
+  
 	{% include 'nav.html' %}
-
-
 
 	<main role="main" class="container">
   <div class="row">
     <div class="message">
       {% if messages %}
             {% for message in messages %}
-            <div class="alert alert-{{message.tags}}">
+            <div class="alert is-{{message.tags}} ">
               {{message}}
             </div>
             {% endfor %}
