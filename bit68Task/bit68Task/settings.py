@@ -37,8 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #MYAPPS
+    'weatherapp',
+    'crispy_forms',
 ]
-
+LOGIN_REDIRECT_URL='weatherapp:weather-form'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
