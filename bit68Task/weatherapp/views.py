@@ -24,7 +24,6 @@ def register(request):
 		messages.error(request, f'please enter valid information')
 
 	return render(request, 'register.html', {'form':form})
-from django.http import HttpResponse, HttpResponseNotFound
 
 #Authentication required to access this view so user redirected to login first
 @login_required(login_url='weatherapp:login')
